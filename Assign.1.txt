@@ -1,0 +1,36 @@
+package Assignment3;
+
+public class Inheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		class A{
+			void function1() {
+				System.out.println("method function belongs to parent class");
+				
+			}
+		}
+		
+			class B extends A{
+				void function2() {
+					System.out.println("method function belongs to child class");
+					
+				}
+					
+		}
+			class C extends B{
+				void function3() {
+					System.out.println("method function belongs to grand child class");
+				}
+			}
+			class Multiple{
+				public static void main(String[] args) {
+					C obj = new C();
+					obj.function1();
+					obj.function2();
+					obj.function3();
+					
+				}
+					
+				
+				}
